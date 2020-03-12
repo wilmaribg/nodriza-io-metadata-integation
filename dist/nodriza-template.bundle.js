@@ -86,14 +86,25 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/helpers.js":
+/*!************************!*\
+  !*** ./src/helpers.js ***!
+  \************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = {\n\tcustomSrName: function (name) {\n\t\treturn `Hello sr ${name}`\n\t},\n\tcustomTable: function (header1, header2, header3) {\n    const buildValues = [[1, 2, 3], [4, 5, 6]].reduce((acc, tr) => {\n      const getTd = (tr) => tr.map(td => `<td>${td}</td>`).join('') \n      return acc += `<tr>${getTd(tr)}</tr>`\n    }, '')\n\t\treturn `\n\t\t\t<table class=\"customTable\">\n\t\t\t <thead>\n        <th>${header1}</th>\n        <th>${header2}</th>\n        <th>${header3}</th>\n       </thead>\n       <tbody>\n        ${buildValues}\n       </tbody>\n\t\t\t</table>\n\t\t`\n\t},\n}\n\n\n//# sourceURL=webpack:///./src/helpers.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-eval("const helpers = {\n\tcustomSrName: function (name) {\n\t\treturn `Hello sr ${name}`\n\t},\n\tcustomTable: function (header1, header2, header3) {\n    const buildValues = [[1, 2, 3], [4, 5, 6]].reduce((acc, tr) => {\n      const getTd = (tr) => tr.map(td => `<td>${td}</td>`).join('') \n      return acc += `<tr>${getTd(tr)}</tr>`\n    }, '')\n\t\treturn `\n\t\t\t<table class=\"customTable\">\n\t\t\t <thead>\n        <th>${header1}</th>\n        <th>${header2}</th>\n        <th>${header3}</th>\n       </thead>\n       <tbody>\n        ${buildValues}\n       </tbody>\n\t\t\t</table>\n\t\t`\n\t},\n}\nmodule.exports = helpers\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("const helpers = __webpack_require__(/*! ./helpers */ \"./src/helpers.js\")\n\nif (registerHelper && helpers) {\n  try {\n    Object.keys(helpers).forEach(helper => registerHelper(helper, helpers[helper]))\n  } catch (err) {\n    console.log(err)\n  }\n}\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 
