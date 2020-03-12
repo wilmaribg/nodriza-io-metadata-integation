@@ -1,1 +1,1 @@
-console.log('Hola mundo cruel--->!')
+console.log('Hola mundo cruel!')
