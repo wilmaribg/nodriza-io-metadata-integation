@@ -1,0 +1,25 @@
+{
+  "name": "nodriza-io-metadata-integation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node_modules/.bin/webpack-cli --config webpack.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wilmaribg/nodriza-io-metadata-integation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wilmaribg/nodriza-io-metadata-integation/issues"
+  },
+  "homepage": "https://github.com/wilmaribg/nodriza-io-metadata-integation#readme",
+  "devDependencies": {
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11"
+  }
+}
