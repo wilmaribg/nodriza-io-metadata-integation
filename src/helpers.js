@@ -3,7 +3,7 @@ module.exports = {
 		return `Hello sr ${name}`
 	},
 	customTable: function (header1, header2, header3) {
-    const buildValues = [[1, 2, 3], [4, 5, 6]].reduce((acc, tr) => {
+    const tbody = [[1, 2, 3], [4, 5, 6]].reduce((acc, tr) => {
       const getTd = (tr) => tr.map(td => `<td>${td}</td>`).join('') 
       return acc += `<tr>${getTd(tr)}</tr>`
     }, '')
@@ -15,7 +15,7 @@ module.exports = {
         <th>${header3}</th>
        </thead>
        <tbody>
-        ${buildValues}
+        ${tbody}
        </tbody>
 			</table>
 		`
