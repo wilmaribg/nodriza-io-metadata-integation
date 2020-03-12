@@ -15,7 +15,7 @@ const helpers = {
         <th>${header3}</th>
        </thead>
        <tbody>
-        ${buildValues()}
+        ${buildValues}
        </tbody>
 			</table>
 		`
